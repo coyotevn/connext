@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
+
+body {
+	background: #fcfcfc;
+	color: #020202;
+  	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5em;
+	-webkit-hyphens: manual;
+	-moz-hyphens: manual;
+	hyphens: manual
+}
+
+a {
+	color: #0073bf;
+
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	color: #0073bf;
+	font-size: 1.6em;
+	font-weight: 600;
+	line-height: 1.3em;
+	margin-bottom: .8em
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.3em;
+	font-weight: 600;
+	line-height: 1em;
+	margin-bottom: .6em;
+	color: #0073bf
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	color: #333;
+	font-size: 1.15em;
+	font-weight: 600;
+	line-height: 1em;
+	margin-bottom: .5em
+}
+
+h4 {
+	
+	font-family: 'Poppins', sans-serif;
+	color: #333;
+	font-size: 1.1em;
+	font-weight: 600;
+	line-height: 1em;
+	margin-bottom: .5em
+
+}
+
+p {
+	margin-bottom: 1.6em;
+	hyphens: auto
+}
+.note {
+	max-width: 600px;
+	margin: 0px auto;
+	padding: 1em
+			
+			}
+p, ul{
+	hyphens: none;
+}
+
+.icon {
+width: auto;
+min-height: 120px;
+  margin-bottom: 20px;
+  line-height: 120px
+}
+.section-title {
+text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+	padding-top: 15px;
+  position: relative;
+}
+
+.section-title:after {
+  background: #fff400;
+  border-radius: 1px;
+  display: block;
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: 10;
+  left: 50%;
+  margin-left: -30px;
+  width: 60px;
+}
+
+li
+{
+	list-style: none;
+	
+
+}
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #0073bf; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+
+
+.footer {
+	margin: 0px auto;
+	padding: 3em;
+	position: relative;
+   	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff400;
+   	text-align: center;
+
+}
+
+.page-wrap {
+        overflow-x: hidden;
+}
+
+.image-wrapper {
+	width: 100%;
+	float:left;
+	font-size: 85%;
+	text-align: center;
+	padding-top: 20px;
+	font-style: italic
+		
+}
+
+article {
+	hyphens: manual;
+}
+
+p {
+	hyphens: none;
+}
+
+
