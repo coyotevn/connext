@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 p, ul {
+	font-size: 0.9em;
 	hyphens: none;
 }
 .note {
@@ -87,7 +88,7 @@ body {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 600px;
+  max-width: 500px;
 	left: 20px;
   margin: 10 auto;
 }
@@ -100,14 +101,14 @@ body {
   background-color: #0073bb;
   top: 0;
   bottom: 0;
-  left: 25%;
-  margin-left: -9px;
+  left: 30%;
+  margin-left: 22px;
 }
 
 /* Container around content */
 .container {
-  max-width: 360px;
-	padding: 10px;
+  max-width: 320px;
+padding: 10px;
   position: relative;
   background-color: inherit;
 }
@@ -153,7 +154,7 @@ body {
 
 /* The actual content */
 .content {
-  padding: 20px 40px 10px 20px;
+  padding: 20px 20px 10px 20px;
   background-color: whitesmoke;
   position: relative;
   border-radius: 6px;
@@ -163,7 +164,7 @@ body {
 
 /* IMPORTANT */
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media only screen and (min-width: 300px) and (max-width: 1440px) {
+@media only screen and (min-width: 280px) and (max-width: 1440px) {
 	
 	.page-wrap {
 		width: 490px;
@@ -175,7 +176,7 @@ body {
   
   /* Full-width containers */
   .container {
-  max-width: 380px;
+  max-width: 320px;
   padding-left: 0px;
   padding-right: 16px;
   }
@@ -261,7 +262,7 @@ span.date {
 	border-radius: 50%;
 	position:relative;
 	float: left;
-	left: 16px;	
+	left: 46px;	
 }
 
 
