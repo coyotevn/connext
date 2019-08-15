@@ -3,6 +3,14 @@
 * {
 	box-sizing: border-box;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
 p, ul {
 	font-size: 1em;
 	hyphens: none;
@@ -109,7 +117,7 @@ body {
 /* Container around content */
 .container {
   max-width: 320px;
-padding: 10px;
+ padding: 10px;
   position: relative;
   background-color: inherit;
 }
@@ -159,55 +167,13 @@ padding: 10px;
   background-color: whitesmoke;
   position: relative;
   border-radius: 6px;
-	left: 30px;
+  left: 12px;
 }
 
 
 /* IMPORTANT */
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media only screen and (min-width: 280px) and (max-width: 1440px) {
-	
-	.page-wrap {
-		width: 375px;
-	}
-  /* Place the timelime to the left */
-  .timeline:after {
-  left: 5%;
-  }
-  
-	p, li{
-		font-size: 0.9em;
-	}
-  /* Full-width containers */
-  .container {
-  max-width: 300px;
-  padding-left: 0px;
-  padding-right: 16px;
-  }
 
-/* Make sure all circles are at the same spot */
-  .left:after, .right:after {
-  left: -1%;
-  }
-  
-  /* Make sure that all arrows are pointing leftwards */
-  .container:before {
-  left: 20px;
-  border: medium solid grey;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent whitesmoke transparent transparent;
-  }
 
-	
-	
-  /* Make all right containers behave like the left ones */
-  .right {
-  left: 0%;
-  }
-	
-	
-
-}
 
 .footer {
 	margin: 0px auto;
@@ -253,7 +219,7 @@ span.date {
 	font-size: 0.8em; 
 	float: left; 
 	position: absolute; 
-	left:-80px;
+	left:-56px;
 	vertical-align: middle;
 }
 
@@ -266,10 +232,70 @@ span.date {
 	border-radius: 50%;
 	position:relative;
 	float: left;
-	left: 2%;	
+	left: 5%;	
 }
 
 
 .page-wrap {
     overflow-x: hidden;
   }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 280px) and (max-width: 1440px) {
+	
+	
+	.page-wrap {
+		width: 360px;
+		overflow-x: scroll;
+	}
+  /* Place the timelime to the left */
+  .timeline:after {
+  left: 0%;
+  }
+  
+	p, li{
+		font-size: 0.9em;
+	}
+  /* Full-width containers */
+  .container {
+  max-width: 300px;
+  padding-left: 0px;
+  padding-right: 20px;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left:after, .right:after {
+  left: -5%;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container:before {
+  left: 5px;
+  border: medium solid grey;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent whitesmoke transparent transparent;
+  }
+
+	
+	
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+	
+	.year {
+	padding: 2rem 2rem;
+	color: red;
+	background-color: #0073bf;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	position:relative;
+	float: left;
+	left: -2%;	
+}
+	
+} 
+
+
+
