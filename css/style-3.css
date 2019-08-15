@@ -97,7 +97,7 @@ body {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 500px;
+  max-width: 350px;
 	left: 20px;
   margin: 10 auto;
 }
@@ -128,7 +128,7 @@ body {
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 2px;
+  left: 0px;
   background-color: #0073bf;
   top: 30%;
   border-radius: 50%;
@@ -181,6 +181,7 @@ body {
 	position: relative;
    	left: 0;
 	bottom: 0;
+	max-width: 400px;
 	width: 100%;
 	background-color: #fff400;
    	color: ;
@@ -219,7 +220,7 @@ span.date {
 	font-size: 0.8em; 
 	float: left; 
 	position: absolute; 
-	left:-56px;
+	left:-53px;
 	vertical-align: middle;
 }
 
@@ -245,7 +246,7 @@ span.date {
 	
 	
 	.page-wrap {
-		width: 360px;
+		width: 350px;
 		overflow-x: scroll;
 	}
   /* Place the timelime to the left */
@@ -265,7 +266,7 @@ span.date {
 
 /* Make sure all circles are at the same spot */
   .left:after, .right:after {
-  left: -5%;
+  left: -3%;
   }
   
   /* Make sure that all arrows are pointing leftwards */
