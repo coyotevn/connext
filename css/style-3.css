@@ -247,7 +247,8 @@ span.date {
 	
 	.page-wrap {
 		width: 350px;
-		overflow-x: scroll;
+		margin: 0 auto;
+		overflow-x: hidden;
 	}
   /* Place the timelime to the left */
   .timeline:after {
